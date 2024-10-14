@@ -7,7 +7,7 @@
         <div class="container" v-if="readyToPlay">
   
           <div class="nav" style="margin-bottom: 10px;">
-            <strong>Werewolf: [{{roomCode}}]</strong> &nbsp;
+            <strong>RoomCode: [{{roomCode}}]</strong> &nbsp;
             
             <!-- <span>Possibly {{teamSituation}}</span><br><br> -->
             <span v-if="this.detailData?.length ==1 && this.gameStatus == 'ready'"  style="margin-bottom:20px">Day 0
@@ -161,7 +161,7 @@
                       <button @click="createARoom()" class="create" >Create a Room</button>
                       OR<br>
                       <label>Room Code</label>
-                      <input type="text" placeholder="Type room cocde.." v-model="roomCode"  autocapitalize="none" >
+                      <input type="text" placeholder="Type room code.." v-model="roomCode"  autocapitalize="none" >
                       <button @click="joinARoom()" class="join">Join a Room</button>
   
                     </form>
